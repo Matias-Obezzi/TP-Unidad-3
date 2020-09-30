@@ -17,7 +17,7 @@ const showDestinos =  (places) => {
             `<div class="place-show shadow px-0 rounded" style="background: url(${place.img})">
                 <div class="details text-light px-4 text-center">
                     <h3>${place.name}</h3>
-                    <a class="btn btn-success w-50" href="/destino/?d=${place.id}">Ver</a>
+                    <a class="btn btn-success w-50" href="../destino/?d=${place.id}">Ver</a>
                 </div>
             </div>`;
         newPlace.id = place.id;

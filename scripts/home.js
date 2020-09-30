@@ -86,7 +86,7 @@ const addPlaces = (places) => {
     const placesContainer = document.querySelector("#destinitys");
     places.forEach((place) => {
         var newPlace = document.createElement('a');
-        newPlace.setAttribute('href', `destino/?d=${place.id}`)
+        newPlace.setAttribute('href', `./destino/?d=${place.id}`)
         // newPlace.classList.add("mx-2");
         // newPlace.classList.add("place");
         newPlace.className = "mx-2 place"
@@ -116,7 +116,7 @@ const favorites = (places) => {
             `<div class="place-show shadow px-0 rounded" style="background: url(${place.img})">
                 <div class="details text-light px-4 text-center">
                     <h3>${place.name}</h3>
-                    <a class="btn btn-success w-50" href="/destino/?d=${place.id}">Ver</a>
+                    <a class="btn btn-success w-50" href="./destino/?d=${place.id}">Ver</a>
                 </div>
             </div>`;
         newPlace.id = place.id;
