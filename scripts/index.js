@@ -76,7 +76,7 @@ const scripts = () => {
             })
             break;
         default:
-            if(!window.location.hash) window.location.replace('/index.html')
+            // if(!window.location.hash) window.location.replace('/index.html')
     }
 }
 
