@@ -46,8 +46,10 @@ const setForm = () => {
         if(confirm("¿Confirma la comprar?")){
             $('#buy').modal('hide');
             setAlert("Pasajes comprados exitosamente\nGracias por su compra!")
-            name = ""
-            people = 1;     
+            name = "";
+            people = 1;
+            document.querySelector("#peopleSelector").value = people;
+            document.querySelector("#name").value = name;
         }
     })
 }
