@@ -3,6 +3,7 @@
 @import url('places.css');
 @import url('footer.css');
 @import url('destino.css');
+@import url('forms.css');
 
 *{
     scroll-behavior: smooth;

@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-        <title>Travel WORLD - Iniciar sesión</title>
+        <title>Travel WORLD - Registro</title>
         <link rel="shortcut icon" href="../media/icon.png" type="image/x-icon">
         <link rel="stylesheet" href="../styles/index.css" />    
     </head>
     <body>
-        <nav id="nav" class="navbar navbar-dark font-weight-bold navbar-expand-lg fixed-top">
+        <nav id="nav" class="navbar navbar-dark font-weight-bold navbar-expand-lg fixed-top" style="backdrop-filter: none;">
             <div class="progress">
                 <div id="progress" class="progress-bar bg-light fixed-top" role="progressbar" style="height:3px; width: 0;"></div>
             </div>
@@ -30,21 +30,35 @@
             </div>
         </nav>
         
-        
+        <form class="form-page" id="form">
+            <div class="form col-lg-4 col-md-6 col-10 mx-auto p-4 rounded my-auto bg-light">
+                <h3 class="font-weight-bold text-center">Iniciar sesión</h3>
+                <hr/>
+                <div class="mx-auto text-center">
+                    <label htmlFor="email" class="col-12 row mx-auto px-0">Email</label>
+                    <input id="email" class="form-control text-center" placeholder="Email" type="email" />
+                </div>
+                <div class="mx-auto mt-3">
+                    <label htmlFor="password" class="col-12 row mx-auto px-0">Contraseña <small class="form-text text-muted ml-auto text-right">Mínimo 6 caracteres</small></label>
+                    <input id="password" class="form-control text-center" type="password" placeholder="Constraseña" />
+                </div>
+                <button class="btn btn-block mt-3 btn-success" id="submit" disabled>Iniciar sesión</button>
+            </div>
+        </form>
 
         <div class="footer row mx-0">
-            <div class="col-8 row mx-auto mt-3 border-right">
-                <div class="col d-flex flex-column">
+            <div class="col-md-8 col-12 row mx-auto mt-3">
+                <div class="col-12 col-md my-2 text-center text-md-left d-flex flex-column">
                     <p class="m-0">Mapa del sitio</p>
                     <a class="link pointer" href="../#home">Inicio</a>
                     <a class="link pointer" href="../#favorites">Favoritos</a>
                 </div>
-                <div class="col d-flex flex-column">
+                <div class="col-12 col-md my-2 text-center text-md-left d-flex flex-column">
                     <p class="m-0">Mi cuenta</p>
                     <a class="link pointer" href="../login">Iniciar sesión</a>
                     <a class="link pointer" href="../signin">Crear cuenta</a>
                 </div>
-                <div class="col d-flex flex-column">
+                <div class="col-12 col-md my-2 text-center text-md-left d-flex flex-column">
                     <p class="m-0">Somos Travel WORLD</p>
                     <a class="link pointer" href="#">Historia</a>
                     <a class="link pointer" href="#">Nosotros</a>

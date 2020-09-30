@@ -6,7 +6,7 @@ const home = (places) => {
 
 var change = null;
 // const sentenses =[ "travels", "adventure", "passion", "action"]
-const sentenses =[ "viajes", "aventura", "pasión", "acción"]
+const sentenses =[ "viajes", "aventura", "pasión", "acción", "emoción"]
 var part = 0;
 var part_index = 0;
 var interval_instace;

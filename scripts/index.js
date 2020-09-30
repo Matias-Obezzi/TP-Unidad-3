@@ -59,20 +59,40 @@ const setNav = () =>{
 const scripts = () => {
     // console.log(window.location.pathname)
     switch(window.location.pathname){
+        // Github
         case "/TP-Unidad-3/index.html":
         case "/TP-Unidad-3/":
+        // Local
+        case "/index.html":
+        case "/":
             $.getScript('./scripts/home.js', function(e){
                 home(places);
             })
             break;
+        // Github
         case "/TP-Unidad-3/destino/":
+        // Local
+        case "/destino/":
             $.getScript('../scripts/destino.js', function(e){
                 destino(places);
             })
             break;
+        // Github
         case "/TP-Unidad-3/destinos/":
+        // Local
+        case "/destinos/":
             $.getScript('../scripts/destinos.js', function(e){
                 destinos(places);
+            })
+            break;
+        // Github
+        case "/TP-Unidad-3/login/": 
+        case "/TP-Unidad-3/signin/":
+        // Local
+        case "/login/":
+        case "/signin/":
+            $.getScript('../scripts/forms.js', function(e){
+                forms();
             })
             break;
     }
