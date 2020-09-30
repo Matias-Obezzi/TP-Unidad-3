@@ -59,24 +59,22 @@ const setNav = () =>{
 const scripts = () => {
     console.log(window.location.pathname)
     switch(window.location.pathname){
-        case "/index.html":
-        case "/":
+        case "/TP-Unidad-3/index.html":
+        case "/TP-Unidad-3/":
             $.getScript('./scripts/home.js', function(e){
                 home(places);
             })
             break;
-        case "/destino/":
+        case "/TP-Unidad-3/destino/":
             $.getScript('../scripts/destino.js', function(e){
                 destino(places);
             })
             break;
-        case "/destinos/":
+        case "/TP-Unidad-3/destinos/":
             $.getScript('../scripts/destinos.js', function(e){
                 destinos(places);
             })
             break;
-        default:
-            // if(!window.location.hash) window.location.replace('/index.html')
     }
 }
 
