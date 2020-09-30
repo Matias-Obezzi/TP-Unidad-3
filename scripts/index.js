@@ -57,7 +57,7 @@ const setNav = () =>{
 }
 
 const scripts = () => {
-    console.log(window.location.pathname)
+    // console.log(window.location.pathname)
     switch(window.location.pathname){
         case "/TP-Unidad-3/index.html":
         case "/TP-Unidad-3/":
