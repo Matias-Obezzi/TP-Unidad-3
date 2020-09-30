@@ -1,0 +1,138 @@
+.banner{
+    height: calc(100vh);
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    background: 
+        linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.10)),
+        /* url("https://source.unsplash.com/collection/8994315/1080x1080"); */
+        url("../media/banner.jpg ");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+
+.banner .content{
+    margin-top: auto;
+    margin-bottom: auto;   
+}
+
+.search input{
+    width: 100%;
+    padding: 10px 40px 10px 15px !important;
+    border-radius: 200px;
+    border: 0;
+}
+
+.search i{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 100px;
+    transition: opacity 0.5s;
+    opacity: 0.7;
+}
+
+.search i:hover{
+    opacity: 1;
+}
+
+.searchs{
+    display: flex;
+    flex: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none !important;  /* IE and Edge */
+    scrollbar-width: none !important;  /* Firefox */
+}
+
+.searchs::-webkit-scrollbar{
+    display: none !important;
+}
+
+.searchs .place{
+    float: left;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    min-width: 100px;
+    max-width: auto;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    background: rgba(0,0,0,0);
+    color: #F8F9FA;
+    transition: background 0.2s, color 0.2s;
+}
+
+.searchs .place:hover{
+    opacity: 1;
+    text-decoration: none;
+    background: #F8F9FA;
+    color: #181819;
+    /* background: rgba(255,255,255,0.25); */
+}
+
+.continue{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    animation: scrollAnimation infinite 1s;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+@keyframes scrollAnimation{
+    from{
+        transform: translateY(-50%);
+    }
+    to{
+        transform: translateY(50%);
+    }
+}
+
+.stars{
+    overflow: hidden;
+}
+
+.star{
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    animation: move;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.type-1{
+    width: 1px;
+    height: 1px;
+}
+
+.type-2{
+    width: 2px;
+    height: 2px;
+}
+
+.type-3{
+    width: 3px;
+    height: 3px;
+}
+
+@keyframes move{
+    form{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-1000px);
+    }
+}

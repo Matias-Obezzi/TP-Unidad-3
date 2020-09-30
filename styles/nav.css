@@ -1,0 +1,46 @@
+
+#nav{
+    backdrop-filter: blur(1rem);
+}
+
+#icon, #progress, .nav-link{
+    transition: 0.5s all;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.navbar-toggler{
+    transition: 0.5s all !important;
+}
+
+.navbar-dark .navbar-collapse .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-light .navbar-collapse .navbar-nav .nav-link{
+    color: black;
+}
+
+.nav-link{
+    cursor: pointer;
+    opacity: 1;
+    transition: color 0.2s;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+.nav-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.nav-link:hover:after, .nav-link.active:after {
+    transform: scaleX(1);
+}

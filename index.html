@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+        <title>Travel WORLD - Inicio</title>
+        <link rel="shortcut icon" href="./media/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/index.css" />
+    </head>
+    <body>
+        <nav id="nav" class="navbar navbar-dark font-weight-bold navbar-expand-lg fixed-top">
+            <div class="progress">
+                <div id="progress" class="progress-bar bg-light fixed-top" role="progressbar" style="height:3px; width: 0;"></div>
+            </div>
+            <div class="navbar-brand mr-auto">
+                <a href="#home" id="icon" class="rounded-circle p-1 bg-light mx-auto align-middle d-inline-block my-auto pointer">
+                    <img src="./media/icon.png" width="30" height="30" class=" mx-auto align-top" loading="lazy">
+                </a>
+            </div>
+            <button class="navbar-toggler bg-light" id="button-menu" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon invert"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#home">Inicio</a>
+                    <a class="nav-link" href="#favorites">Favoritos</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="home" class="banner text-light shadow">
+            <div class="stars"></div>
+            <div class="content row mx-0 w-100">
+                <div class="title col-lg-4 col-md-6 col-12 text-center">
+                    <h1>Travel WORLD</h1>
+                    <!-- <h2>You can find <span class="change">travels</span></h2> -->
+                    <h2>Encontrarás <span class="change"></span></h2>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12 my-auto ">
+                    <div class="search my-auto row mx-auto">
+                        <input id="search" type="text" placeholder="Cual es tu próximo destino?">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="row mx-auto mt-2">
+                        <i class="fas fa-chevron-left d-flex my-auto mx-auto px-2" style="opacity: 0.7;"></i>
+                        <div id="destinitys" class="searchs mx-0 d-flex flex-row col mx-auto">
+                            <!-- Carga Dinamica -->
+                        </div>
+                        <i class="fas fa-chevron-right d-flex my-auto mx-auto px-2" style="opacity: 0.7;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-light pointer">
+                <i data-objetive="favorites" class="fas fa-chevron-down continue"></i>
+            </div>
+        </div>
+
+        <div id="favorites" class="container my-4">
+            <div class="row mx-0 mb-4">  
+                <h2 class="font-weight-bold">Favoritos</h2>
+                <hr class="col mx-3 my-auto">
+            </div>
+            <div class="row mx-center" id="favoritesContainer">
+                <!-- Carga Dinamica -->
+            </div>
+            <div class="col-12 text-center mt-4 row mx-auto">
+                <hr class="col mx-3">
+                <a href="/destinos" class="btn btn-info px-5">Ver más</a>
+                <hr class="col mx-3">
+            </div>
+        </div>
+
+        <div class="footer row mx-0">
+            <div class="col-8 row mx-auto mt-3 border-right">
+                <div class="col d-flex flex-column">
+                    <p class="m-0">Mapa del sitio</p>
+                    <a class="link pointer" href="#home">Inicio</a>
+                    <a class="link pointer" href="#favorites">Favoritos</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <p class="m-0">Mi cuenta</p>
+                    <a class="link pointer" href="login">Iniciar sesión</a>
+                    <a class="link pointer" href="signin">Crear cuenta</a>
+                </div>
+                <div class="col d-flex flex-column">
+                    <p class="m-0">Somos Travel WORLD</p>
+                    <a class="link pointer" href="">Historia</a>
+                    <a class="link pointer" href="">Nosotros</a>
+                    <a class="link pointer" href="">Travel WORLD</a>
+                </div>
+            </div>
+            <div class="col text-center my-auto">
+                <div class="footer-links col-12 mx-auto my-3">
+                    <a href="https://github.com/Matias-Obezzi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/Matias-Obezzi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://matias-obezzi.github.io" target="_blank" title="Web Personal"><i class="fas fa-globe"></i></a>
+                </div>
+                <div class="footer-copyright col-12 my-3">
+                    Hecho con <i class="fas fa-heart"></i> por <a href="https://matias-obezzi.github.io" target="_blank" class="author-web">Matías Obezzi</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

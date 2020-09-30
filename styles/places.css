@@ -1,0 +1,28 @@
+.place-show{
+    padding-top: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+
+.place-show .details{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(360deg, rgba(0,0,0,0.8),rgba(0,0,0,0.6), rgba(0,0,0,0));
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+@media (min-width: 991px){
+    .place-show .details{
+        transform: translateY(100vh);
+    }
+}
+
+
+.place-show:hover .details{
+    transform: translateY(0);
+}

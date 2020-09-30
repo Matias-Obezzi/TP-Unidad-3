@@ -1,0 +1,31 @@
+#banner{
+    height: 80vh;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    clip-path: ellipse(100% 80% at 50% 0%);
+}
+
+.destino-show{
+    position: relative;
+    margin-top: -40vh;
+}
+
+@media (max-width:991){
+    .destino-show{
+        position: relative;
+        margin-top: -40vh;
+    }
+}
+@media (max-width: 445px){
+    .destino-show{
+        position: relative;
+        margin-top: -60vh;
+    }
+}
